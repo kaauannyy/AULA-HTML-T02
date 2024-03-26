@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário pt.2</title>
+</head>
+<body>
+    <!-- hide esconde a opção mais fica em branco -->
+    <!-- selected disable - vem com a opção que nao consegue por ela. -->
+    <!-- textarea e uma caixinha para deixar comentario. deixa nada entr a tag de fechamento e abertura da tag. -->
+    <!-- maxlength limita o numero de linhas que você pode escrever. -->
+
+    <form action="mailto:kauannywayne@gmail.com" method="post">
+        <fieldset>
+            <legend>Dados do Aluno </legend>
+    <label for="nome">Nome: </label>
+    <input type="text"  id="nome" placeholder="Digite o seu nome" required>
+    <br><br>
+    <label for="email1">E-mail: </label>
+    <input type="email" name="email" id="email1" placeholder="Ex: email@gmail.com" required>
+    <br><br>
+    <label for="idade">Idade</label>
+    <input type="date" id="idade">
+    <br><br>
+    <label for="endereco">Endereço</label>
+    <input type="text" id="endereco" placeholder="Digite sua idade">
+    <br><br>
+    <label for="ondemora"> Onde você mora: </label>
+    <input type="text" list="Cidade" autocomplete="on" name="listaCidade" placeholder="Digite sua cidade" id="ondemora">
+    <datalist id="Cidade">
+        <option value="São Paulo">São Paulo</option>
+        <option value="Campinas">Campinas</option>
+        <option value="Santo André">Santo André</option>
+        <option value="Juquitiba">Juquitiba</option>
+    </datalist>
+</fieldset>
+
+<br> 
+
+    <fieldset>
+        <legend> Sobre o curso:</legend>
+    <label for="listaUnidades"> Selecione a unidade:</label>
+    <select name="Unidades" id="listaUnidades" required>
+    <option value="Unidade" selected hidden="on"></option>
+    <option value="santana">Santana</option>
+    <option value="santo_amaro">Santo Amaro</option>
+    <option value="diadema">Diadema</option>
+    <option value="itaquera">Itaquera</option>
+    </select>
+    <br><br>
+    <label for="curso">Escolhe o curso: </label>
+    <select name="curso" id="curso" required>
+        <option value="" hidden></option>
+        <option value="programacao_web">Programação da Web</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="suporte_ti">Suporte de T.I</option>
+        <option value="gestao">Gestão</option>
+
+        </select>
+         <br>
+         
+        <p>Escolha o horário: </p>
+        <input type="radio" name="horario" id="horario1" value="op1" required>
+        <label for="horario1"> 08:00 - 12:00</label>
+        <br><br>
+        <input type="radio" name="horario" id="horario2" value="op2">
+        <label for="horario2"> 13:00 - 17:00</label>
+        <br><br>
+        <input type="radio" id="horario3" value="op3" name="horario">
+        <label for="horario3"> 18:00 - 20:00</label>
+    
+    <br>
+   
+
+    <br><br>
+    <textarea name="avaliacao" id="avaliacao" cols="15" rows="9" placeholder="Deixe aqui o seu comentário." maxlength="100" required></textarea>
+    <br><br>
+</fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

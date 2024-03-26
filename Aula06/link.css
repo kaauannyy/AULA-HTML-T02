@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(241, 191, 191);
+}
+h1 {
+    text-align: center;
+    color:rgb(156, 136, 229);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 182, 230);
+}
+h2{
+    text-align: center;
+    color:rgb(156, 136, 229);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(221, 182, 230);
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(14, 13, 13);
+}
